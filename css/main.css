@@ -1,0 +1,133 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  background-image: url("../img/maple.jpg");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: cover;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+.description p{
+  color:white;
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header_inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header_logo {
+  height: 60px;
+  margin-right: 0;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header_title {
+  font-weight: bold;
+  font-size: 4em;
+  margin: 0.5em 0.25em;
+  display: inline-block;
+  color: #fafafa;
+}
+.nav {
+  width: 100%;
+  margin-top:40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav_list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color:rgba(207, 201, 201, 0.62);
+}
+
+.nav_item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  line-height: 15px;
+  padding: 15px;
+  margin-left:10%
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight:bold;
+  color: grey;
+}
+
+.nav a:hover {
+  color: #67aae9;
+}
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article{
+  display:inline-block;
+  margin-top:30px;
+  margin-left:7px;
+  margin-bottom:30px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 70%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+div.skill {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  border-bottom: 2px solid #E0E0E0;
+  margin-top:15px;
+  margin-left:25px;
+  margin-bottom:15px;
+}
+
+div.skill:hover{
+  border: 2px solid white;
+}
+
+div.skill img {
+  width: 100%;
+  height: auto;
+}
+
+footer a{
+  font-size:18px;
+  color: rgba(70, 68, 66, 0.747);
+}
+
+footer a:hover {
+  color: #67aae9;
+}

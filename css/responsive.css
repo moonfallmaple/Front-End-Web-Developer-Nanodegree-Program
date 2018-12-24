@@ -1,0 +1,421 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.header_menu {
+  display: none;
+}
+
+@media screen and (max-width: 549px) {
+  body{
+    background-image: url("../img/backimg.png");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+
+  }
+  .header_logo {
+    height: 60px;
+    margin-right: 0.5em;
+    display:inline-block;
+  }
+  .header_title {
+    font-size: 2em;
+    vertical-align: bottom;
+  }
+
+  /* 隐藏菜单栏的位置 */
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-350px, 0);
+    transform: translate(-350px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  /* 点击菜单栏后菜单栏出现的位置 */
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav_item {
+    display: list-item;
+    border-bottom: 1px solid rgba(161, 157, 157, 0.795);
+    width: 100%;
+    text-align: left;
+  }
+  .nav_item{
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    display: block;
+    font-size: 23px;
+    color: black;
+    text-decoration: none;
+  }
+  .header_menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header_menu svg {
+    width: 30px;
+    fill: #E0E0E0;
+  }
+  .about_me{
+    width:100%;
+    margin:0 auto;
+    margin-top:15px;
+    height:50%;
+  }
+  .description{
+    margin:0;
+  }
+  div.skill {
+    display:inline-block;
+    width:auto;
+    margin:20px;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    border: 0px solid white;
+    box-shadow: 0 0 0 1px rgba(24, 23, 23, 0.2);
+  }
+
+  div.skill:hover{
+    box-shadow: 0 0 0 1px rgba(88, 170, 238, 0.918);
+    transition: all 200ms ease-out;
+  }
+  div.des{
+    color:white;
+    font-size:14px;
+    padding:10px;
+  }
+  .container{
+    width:100%;
+    background-color:rgba(231, 175, 148, 0.199);
+    color: white;
+    text-align: center;
+    margin-top:60px;
+    padding:0.2em;
+  }
+
+
+}
+@media screen and (min-width: 550px) and (max-width: 600px){
+    .header_logo {
+      height: 8em;
+      margin-right: 0.5em;
+      display:inline-block;
+    }
+    .header_title {
+      margin-top:30px;
+      font-size: 3em;
+      vertical-align: bottom;
+      text-align:center;
+    }
+    .nav {
+      width: 100%;
+      margin-top:40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav_list {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background-color:rgba(207, 201, 201, 0.62);
+    }
+
+    .nav_item {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 10%;
+      text-align: center;
+      line-height: 15px;
+      padding: 15px;
+      margin-left:10%
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-weight:bold;
+      color: white;
+      font-size:15px;
+    }
+
+    .nav a:hover {
+      color: #67aae9;
+    }
+
+    .about_me{
+      width:100%;
+      margin:0;
+      height:50%;
+      font-size:18px;
+    }
+    .description{
+      margin:0;
+    }
+    div.skill {
+      display:inline-block;
+      margin:30px;
+      width:auto;
+      border-radius: 0px 0px 10px 10px;
+      -moz-border-radius: 0px 0px 10px 10px;
+      -webkit-border-radius: 0px 0px 10px 10px;
+      border: 0px solid white;
+      box-shadow: 0 0 0 1px rgba(24, 23, 23, 0.2);
+    }
+    footer a{
+      font-size:18px;
+      color:#666670;
+      text-decoration: none;
+    }
+    .container{
+      bottom:0;
+      margin-left: auto;
+      margin-right: auto;
+      width:100%;
+      height:50px;
+      background-color:rgba(231, 175, 148, 0.199);
+      color: white;
+      text-align: center;
+      margin-top:30px;
+    }
+    div.skill:hover{
+      box-shadow: 0 0 0 1px rgba(88, 170, 238, 0.918);
+      transition: all 200ms ease-out;
+    }
+    div.skill img {
+      width: 100%;
+      height: auto;
+    }
+    div.des{
+      color:white;
+      font-size:18px;
+      padding:10px;
+    }
+
+    footer a{
+      font-size:18px;
+      color:#666670;
+      text-decoration: none;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 699px){
+  .about_me{
+    width:100%;
+    margin:0;
+    height:50%;
+    font-size:18px;
+  }
+  .description{
+    margin:0;
+  }
+  .header_logo {
+    height: 8em;
+    margin-right: 0.5em;
+    display:inline-block;
+  }
+  .header_title {
+    margin-top:30px;
+    font-size: 3em;
+    vertical-align: bottom;
+    text-align:center;
+  }
+  .nav_list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color:rgba(207, 201, 201, 0.62);
+  }
+
+  .nav_item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    line-height: 20px;
+    padding: 15px;
+    margin-left:10%
+  }
+  .nav a {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+    font-size:18px;
+  }
+  div.skill {
+    display:inline-block;
+    margin:30px;
+    width:270px;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    border: 0px solid white;
+    box-shadow: 0 0 0 1px rgba(24, 23, 23, 0.2);
+  }
+
+  div.skill:hover{
+    box-shadow: 0 0 0 1px rgba(88, 170, 238, 0.918);
+    transition: all 200ms ease-out;
+  }
+  div.skill img {
+    width: 100%;
+    height: auto;
+  }
+  div.des{
+    color:white;
+    font-size:18px;
+    padding:10px;
+  }
+
+  footer a{
+    font-size:18px;
+    color:#666670;
+    text-decoration: none;
+  }
+  .container{
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height:50px;
+    background-color:rgba(231, 175, 148, 0.199);
+    color: white;
+    text-align: center;
+    margin-top:30px;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .header_logo {
+    height: 10%;
+    margin-right: 2em;
+    display:inline-block;
+  }
+  .header_title {
+    margin-left: 2em;
+    font-size: 4em;
+    vertical-align: bottom;
+
+  }
+  .nav {
+    width: 100%;
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav_list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color:rgba(207, 201, 201, 0.62);
+  }
+
+  .nav_item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    line-height: 15px;
+    padding: 15px;
+    margin-left:10%
+  }
+
+  .nav a {
+    text-decoration: none;
+    font-weight:bold;
+    color: white;
+    font-size:20px;
+  }
+
+  .nav a:hover {
+    color: #67aae9;
+  }
+
+  .about_me{
+    width:100%;
+    margin:0;
+    height:50%;
+  }
+  .description{
+    margin:0;
+  }
+  div.skill {
+    display:inline-block;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #E0E0E0;
+    margin-top:20px;
+    margin-right:55px;
+    margin-bottom:15px;
+    /* shape of border */
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    border: 0px solid white;
+    box-shadow: 0 0 0 1px rgba(24, 23, 23, 0.2);
+  }
+
+  div.skill:hover{
+    box-shadow: 0 0 0 1px rgba(88, 170, 238, 0.918);
+    transition: all 200ms ease-out;
+  }
+  div.skill img {
+    width: 100%;
+    height: auto;
+  }
+  div.des{
+    color:white;
+    font-size:20px;
+    padding:10px;
+  }
+  .container{
+    width:100%;
+    background-color:rgba(231, 175, 148, 0.199);
+    color: white;
+    text-align: center;
+    padding:1em;
+  }
+}
+
+
+@media screen and (min-width: 850px) {
+  .header_logo {
+    height: 5%;
+    margin-right: 2em;
+    display:inline-block;
+  }
+  .header_title {
+    margin-left: 2em;
+    font-size: 4em;
+    vertical-align: bottom;
+  }
+  main, .header__inner, .nav, .content,.about_me {
+    width: 1150px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  .container{
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+    width:1150px;
+    height:50px;
+    background-color:rgba(231, 175, 148, 0.199);
+    color: white;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MoonfallMaple</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_inner">
+                <img class="header_logo" src="img/logo.png">
+                <h1 class="header_title">
+                    THIS IS FALL MAPLE
+                </h1>
+                <a id="menu" class="header_menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <nav id="drawer" class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#">HOME</a></li>
+                <li class="nav_item"><a href="#">TAG</a></li>
+                <li class="nav_item"><a href="#">CATEGORY</a></li>
+                <li class="nav_item"><a href="#">RESUME</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="content">
+                <div class="about_me">
+                    <article class="description">
+                        <h2>Jane </h2>
+                        <h2>Data Science</h2>
+                        <p>春晨煦日中，青绿无不同。秋暮寒霜至，丹枫漫山红。</p>
+                    </article>
+                </div>
+
+                <div class="skill">
+                    <a target="_blank" href="img/Tableau.png">
+                        <img src="img/Tableau.png" alt="skill1" width="300" height="200">
+                    </a>
+                    <div class="des">Add a description of the image here</div>
+                </div>
+
+                <div class="skill" >
+                    <a target="_blank" href="img/sql.jpg">
+                        <img src="img/sql.jpg" alt="skill2" width="300" height="200">
+                    </a>
+                    <div class="des">Add a description of the image here</div>
+                </div>
+
+                <div class="skill">
+                    <a target="_blank" href="img/python.png">
+                        <img src="img/python.png" alt="skill3" width="300" height="200">
+                    </a>
+                    <div class="des">Add a description of the image here</div>
+                </div>
+
+                <div class="skill">
+                    <a target="_blank" href="img/pandas.png">
+                        <img src="img/pandas.png" alt="skill4" width="300" height="200">
+                    </a>
+                    <div class="des">Add a description of the image here</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p><a href="#">RSS</a></p>
+            </div>
+        </footer>
+        <script>
+            // Open the drawer when the menu ison is clicked.
+
+            var menu = document.querySelector('#menu');
+            var main = document.querySelector('main');
+            var drawer = document.querySelector('.nav');
+
+            menu.addEventListener('click', function(e) {
+                drawer.classList.toggle('open');
+                e.stopPropagation();
+            });
+            main.addEventListener('click', function() {
+                drawer.classList.remove('open');
+            });
+
+        </script>
+    </body>
+</html>
