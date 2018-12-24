@@ -1,15 +1,9 @@
-# Matching-Game
-
-
-## Table of Contents
-
-* [Description](#description)
-* [Project Instructions](#project-instructions)
+# Build a a portfolio website
 
 
 ## Description
 
-- Build a a portfolio website.
+- Build a portfolio website.
 - Project created as part of the Udacity Front-End Developer Nanodegree.
 
 ## Project Instructions
